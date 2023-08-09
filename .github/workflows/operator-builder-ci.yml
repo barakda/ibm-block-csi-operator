@@ -2,8 +2,10 @@
 name: operator-builder-ci
 on:
   push:
-    branches:
-      - operator_buider_ci_add_bundle
+    tags:        
+      - '*' 
+#    branches:
+#      - operator_buider_ci_add_bundle
   pull_request:
   workflow_dispatch:
     inputs:
